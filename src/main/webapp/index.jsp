@@ -1,5 +1,6 @@
+<%@include file="head.jsp"%>
 <html>
-<body>
-<h2>Hello World!</h2>
-</body>
+    <body>
+    <a href="search.jsp">Click here to search for users (admin only)</a>
+    </body>
 </html>
