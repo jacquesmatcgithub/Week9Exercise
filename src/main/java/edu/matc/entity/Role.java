@@ -1,5 +1,6 @@
 package edu.matc.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -23,6 +24,7 @@ public class Role {
     @Column(name = "user_name")
     private String userName;
 
+    @JsonIgnore
     @ManyToOne@JoinColumn (name = "user_id",
             foreignKey = @ForeignKey(name = "role_user_id_fk")
     )
